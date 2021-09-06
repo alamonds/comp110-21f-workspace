@@ -13,7 +13,11 @@ if (number < 1):
     print("No beat...")
 else:
     while number > zero:
-        result = result + beat + " "
-        number = number -1
+        if (number != 1):
+            result = result + beat + " "
+            number = number - 1
+        else:
+            result = result + beat
+            number = number - 1
     print(result)
 
