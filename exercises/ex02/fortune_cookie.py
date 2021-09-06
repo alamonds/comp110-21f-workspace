@@ -14,12 +14,13 @@ from random import randint
 
 # Begin your solution here...
 FORTUNE: int = 5
-random: int = randint(1,10)
+random: int = randint(0,10)
 print("Your fortune cookie says... ")
+if random == 9:
+    print("Your week will get better")
 if random == FORTUNE:
     print("You will get an A on your next exam.")
 else:
-    print("You will have a great day!")
     if random > FORTUNE: 
         print("Something exciting is coming!")
     else:
