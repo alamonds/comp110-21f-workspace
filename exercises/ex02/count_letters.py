@@ -14,3 +14,4 @@ while counter < word_length:
         result = result + 1
     counter = counter + 1
 print("Count: " + str(result)) 
+ 

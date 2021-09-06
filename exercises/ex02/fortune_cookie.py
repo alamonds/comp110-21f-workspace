@@ -25,5 +25,5 @@ else:
     else:
         print("Someone special is coming your way!") 
 
-print("Now, go spread positive vibes!")   
+print("Now, go spread positive vibes")    
 

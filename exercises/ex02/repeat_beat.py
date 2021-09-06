@@ -19,5 +19,4 @@ else:
         else:
             result = result + beat
             number = number - 1
-    print(result)
-
+    print(result) 
