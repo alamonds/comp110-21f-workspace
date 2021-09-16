@@ -2,8 +2,8 @@
 
 __author__ = "730345034"
 
-word: str = input("Enter a word: ")
 
+word: str = input("Enter a word: ")
 def duplicate(word):
     i: int = 0
     while i < len(word):
@@ -15,7 +15,5 @@ def duplicate(word):
         i += 1
     return("False")
 
+
 print(duplicate(word))
-
-    
-
