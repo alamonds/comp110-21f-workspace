@@ -7,16 +7,15 @@ result: str = ""
 
 def unc(number):
     if number % 2 == 0 and number % 7 == 0:
-        return ("Tar Heels")
+        return ("TAR HEELS")
     else:
         if number % 2 == 0:
-            return ("Tar")
+            return ("TAR")
     if number % 7 == 0:
-        return ("Heels")
+        return ("HEELS")
     else:
         if number % 7 > 0:
-            return ("Carolina")
+            return ("CAROLINA")
         if number % 2 > 0:
-            return ("Carolina")    
+            return ("CAROLINA")    
 print(unc(flag))
-

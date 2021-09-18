@@ -4,16 +4,16 @@ __author__ = "730345034"
 
 
 word: str = input("Enter a word: ")
-def duplicate(word):
+def duplicate(word) -> str:
     i: int = 0
     while i < len(word):
         j: int = i + 1
         while j < len(word):
             if word[i] == word[j]:
-                return("True")
+                return("Found duplicate: True")
             j += 1
         i += 1
-    return("False")
+    return("Found duplicate: False")
 
 
 print(duplicate(word))
