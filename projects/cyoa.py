@@ -11,6 +11,7 @@ blood: str = '\U0001FA78'
 web: str = '\U0001F578'
 ghost: str = '\U0001F47B'
 player: str = ""
+points: int = 0
 
 emojis: list[str] = [spider, pumpkin, bat, blood, web, ghost]
 
@@ -18,7 +19,6 @@ emojis: list[str] = [spider, pumpkin, bat, blood, web, ghost]
 """Defining main."""
 def main() -> None:
     greet()
-    points: int = 0
     option: str = input("What do you want to do? Enter: Reset points, play, or exit-- ")
     while option != "exit":
         if option == "exit":
