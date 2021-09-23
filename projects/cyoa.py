@@ -1,4 +1,4 @@
-"""Calling all the Monsters-Project"""
+"""Calling all the Monsters-Project."""
 
 __author__ = "730345034"
 
@@ -14,6 +14,8 @@ player: str = ""
 
 emojis: list[str] = [spider, pumpkin, bat, blood, web, ghost]
 
+
+"""Defining main."""
 def main() -> None:
     greet()
     points: int = 0
@@ -29,25 +31,31 @@ def main() -> None:
             if points == 25:
                 print("Winner winner frog stew dinner!")
                 exit()
-        if option == "Reset points":
+        if option == "Reset points": 
             message()
         option = input("What do you want to do? Enter: Reset points, play, or exit-- ")
 
-def message() -> None:
+
+"""Defining message."""
+def message() -> None: 
     print("Have a SPOOKTACULAR Halloween!!")
     points = 0
     print(f"Score: {points}")
-        
-def greet() -> None:
+
+
+"""Defining greeting."""
+def greet() -> None: 
     print("Calling all the monsters: Enter the number of Halloween symbols you want, we will add the values of each! Get to 25 to stay alive!")
     player = input("Enter a player name: ")
     print(f"Welcome, {player}")
 
+
+"""Defining number."""
 def number(points:int, player:str) -> int: 
     num: int = int(input("Enter a number: "))
     i: int = 0
     while i < num:
-        emoji: str = emojis[randint(0,5)] 
+        emoji: str = emojis[randint(0, 5)] 
         print(emoji)
         if emoji == spider:
             points = points + 4
@@ -69,6 +77,7 @@ def number(points:int, player:str) -> int:
             i = i + 1
     print(f"Score: {points}")
     return points
+
 
 if __name__ == "__main__":
     main()
