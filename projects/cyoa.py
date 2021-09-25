@@ -18,6 +18,7 @@ emojis: list[str] = [spider, pumpkin, bat, blood, web, ghost]
 
 """Defining main."""
 def main() -> None:
+    points: int = 0
     greet()
     option: str = input("What do you want to do? Enter: Reset points, play, or exit-- ")
     while option != "exit":
